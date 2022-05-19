@@ -1,0 +1,180 @@
+.selectBox-dropdown {
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: default;
+    margin: 3px 0;
+    font-size: 13px;
+    font-family: roboto condensed,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 10px!important
+}
+
+.price-dropdown-min,.year-dropdown-min {
+    width: 49%;
+    float: left;
+    margin-right: 2px
+}
+
+.price-dropdown-max,.year-dropdown-max {
+    width: 49%;
+    float: right;
+    margin-left: 2px
+}
+
+@media(min-width: 768px) and (max-width:1024px) {
+    .price-dropdown-min,.year-dropdown-min {
+        width:100%;
+        margin-right: 0;
+        font-size: 13px
+    }
+
+    .price-dropdown-max,.year-dropdown-max {
+        width: 100%;
+        margin-left: 0;
+        font-size: 13px
+    }
+}
+
+.price-dropdown-min .selectBox-dropdown,.price-dropdown-max .selectBox-dropdown,.year-dropdown-min .selectBox-dropdown,.year-dropdown-max .selectBox-dropdown,.price-dropdown-max .selectBox-dropdown,.year-dropdown-max .selectBox-dropdown {
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: default;
+    margin: 3px 0;
+    font-size: 13px;
+    font-family: roboto condensed,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 15px!important;
+    padding: 10px 10px 5px;
+    width: 100%!important;
+    line-height: 160%;
+    background: #222;
+    text-align: left
+}
+
+.selectBox-dropdown:focus,.selectBox-dropdown:focus .selectBox-arrow {
+    border-color: #666;
+    cursor: pointer
+}
+
+.selectBox-dropdown .selectBox-label {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ccc
+}
+
+.selectBox-dropdown .selectBox-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 100%;
+    background: url(../../images/arrow.png) 50% center no-repeat
+}
+
+.selectBox-dropdown-menu {
+    position: absolute;
+    z-index: 998;
+    max-height: 300px;
+    color: #000;
+    background: #444;
+    overflow: auto
+}
+
+.selectBox-inline {
+    width: 250px;
+    outline: none;
+    border: 1px solid #bbb;
+    background: #a02828;
+    display: inline-block;
+    overflow: auto
+}
+
+.selectBox-inline:focus {
+    border-color: #666
+}
+
+.selectBox-options {
+    box-shadow: 0 3px 7px #222!important
+}
+
+.selectBox-options,.selectBox-options li,.selectBox-options li a {
+    list-style: none;
+    display: block;
+    cursor: default;
+    padding: 0;
+    margin: 0
+}
+
+.selectBox-options li a {
+    padding: 5px 10px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #111;
+    cursor: pointer;
+    color: #eee;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: roboto condensed,sans-serif
+}
+
+.selectBox-options li.selectBox-hover a {
+    background-color: #222;
+    color: #eee;
+    cursor: pointer
+}
+
+.selectBox-options li.selectBox-disabled a {
+    color: #888;
+    background-color: transparent;
+    cursor: pointer
+}
+
+.selectBox-options li.selectBox-selected a {
+    background-color: #222;
+    cursor: pointer;
+    color: #eee
+}
+
+.selectBox-options .selectBox-optgroup {
+    color: #666;
+    background: #eee;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0 .3em;
+    white-space: nowrap
+}
+
+.selectBox.selectBox-disabled {
+    color: red
+}
+
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {
+    opacity: .1
+}
+
+.selectBox-dropdown .selectBox-arrow {
+    opacity: .9
+}
+
+.selectBox-disabled .selectBox-label {
+    color: #777
+}
+
+.selectBox-inline.selectBox-disabled {
+    color: #ccc
+}
+
+.selectBox-inline.selectBox-disabled .selectBox-options a {
+    background-color: transparent!important
+}
